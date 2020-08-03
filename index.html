@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Speed Typing Game</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>
+                <i class="fas fa-keyboard"></i> 
+                Speed Typing Game
+                <i class="fas fa-keyboard"></i>
+            </h2>
+            <button id="btn-start">Start</button>
+            <button id="btn-restart">Restart</button><br />
+            <small>Type the following</small>
+            <h1 id="word"></h1>
+            <input
+                type="text"
+                id="text"
+                autocomplete="off"
+                placeholder="Type the word here..."
+            /><br />
+            <p class="time-container">
+                <span id="hourglass" class="fa">Time</span>
+                <span id="time">10s</span>
+            </p>
+            <p class="score-container">Score: <span id="score">0</span></p>
+
+            <button id="btn-settings" class="btn-settings">
+                <i class="fas fa-cog"></i>
+            </button>
+    
+            <div id="end-game-container" class="end-game-container"></div>
+            <div class="settings-container" id="settings-container"></div>
+            
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
